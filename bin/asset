@@ -84,11 +84,15 @@ if (assets.length) {
   });
 
   install.on('start', function(asset){
-    log('install', asset.name + '@' + asset.version);
+    log('install', asset.fullname);
   });
 
-  install.on('error', function(err){
-    throw err;
+  install.on('download', function(asset, res){
+    log('download', asset.fullname);
+  });
+  
+  install.on('write', function(asset, path){
+    log('complete', asset.fullname + ' ' + path);
   });
 
   install.on('end', function(){
@@ -106,6 +110,9 @@ if (assets.length) {
  */
 
 function log(key, val) {
+  var width = 10
+    , len = key.length;
+  if (len < width) key = Array(width - len).join(' ') + key;
   console.log('  \033[90m%s :\033[0m \033[36m%s\033[0m', key, val);
 }
 
