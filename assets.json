@@ -33,5 +33,10 @@
     "url": "http://code.jquery.com/jquery-{version}.min.js",
     "filename": "jquery.js",
     "version": "1.5.2"
+  },
+  "prototype": {
+    "url": "http://prototypejs.org/assets/2008/9/29/prototype-{version}.js",
+    "filename": "prototype.js",
+    "version": "1.6.0.3"
   }
 }
