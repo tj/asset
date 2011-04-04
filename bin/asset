@@ -111,6 +111,7 @@ while (args.length) {
 
 if (assets.length) {
   assets = assets.map(normalize);
+  console.log();
   var install = asset.install(assets, repo, options.dest);
 
   install.on('unknown', function(asset){
@@ -131,6 +132,10 @@ if (assets.length) {
 
   install.on('error', function(err){
     abort(err.message);
+  });
+
+  process.on('exit', function(){
+    console.log();
   });
 } else {
   abort('asset <name ...> required');
