@@ -83,6 +83,10 @@ if (assets.length) {
     abort('unregistered asset ' + asset.name);
   });
 
+  install.on('start', function(asset){
+    log('install', asset.name);
+  });
+
   install.on('error', function(err){
     throw err;
   });
