@@ -1,7 +1,72 @@
 
 # asset
 
-  Asset package manager
+  Asset manager
+
+## Installation
+
+    $ npm install asset
+
+## Usage
+
+      Usage: asset [command] [options]
+
+      Commands:
+
+        install <name ...>   installs the given asset <name ...>
+        search  [query]      search available assets with optional [query]
+
+      Options:
+
+        -o, --out <dir>   output directory defaulting to ./public
+        -V, --version     output program version
+        -h, --help        display help information
+
+## Examples
+
+### Installing Several Assets
+
+ By default asset installs to `./public`.
+
+      $ asset raphael g.raphael g.pie
+
+       install : raphael@1.4.7
+       install : g.raphael@0.4.1
+       install : g.pie@0.4.1
+      download : raphael@1.4.7
+      complete : raphael@1.4.7 public/raphael.js
+      download : g.raphael@0.4.1
+      complete : g.raphael@0.4.1 public/g.raphael.js
+      download : g.pie@0.4.1
+      complete : g.pie@0.4.1 public/g.pie.js
+
+### Install Destination
+
+  Tweak the output directory with `-o, --out <dir>`.
+
+      $ asset raphael g.raphael g.pie -o public/javascripts
+
+       install : raphael@1.4.7
+       install : g.raphael@0.4.1
+       install : g.pie@0.4.1
+      download : raphael@1.4.7
+      complete : raphael@1.4.7 public/javascripts/raphael.js
+      download : g.raphael@0.4.1
+      complete : g.raphael@0.4.1 public/javascripts/g.raphael.js
+      download : g.pie@0.4.1
+      complete : g.pie@0.4.1 public/javascripts/g.pie.js
+
+### Search Repository
+
+ We can search the repository with an optional query, listing
+ available assets and their default versions:
+ 
+     $ asset raphael
+
+      install : raphael@1.4.7
+     download : raphael@1.4.7
+     complete : raphael@1.4.7 public/raphael.js
+ 
 
 ## License 
 
