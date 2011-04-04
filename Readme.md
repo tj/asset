@@ -1,7 +1,7 @@
 
-# asset
+# Asset
 
-  Asset manager
+  Asset manager for lazy people
 
 ## Installation
 
