@@ -1,10 +1,12 @@
 {
   "g.raphael": {
     "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.raphael-min.js",
+    "filename": "g.raphael.min.js",
     "version": "0.4.1"
   },
   "raphael": {
     "url": "https://github.com/DmitryBaranovskiy/raphael/raw/v{version}/raphael-min.js",
+    "filename": "raphael.min.js",
     "version": "1.4.7"
   }
 }
