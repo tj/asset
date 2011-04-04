@@ -20,6 +20,21 @@ var args = process.argv.slice(2);
 var assets = [];
 
 /**
+ * Usage information.
+ */
+
+var usage = [
+    ''
+  , '  Usage: asset [options] <name ...>'
+  , ''
+  , '  Options:'
+  , ''
+  , '    -o, --out <dir>   output directory defaulting to ./public'
+  , '    -h, --help        display help information'
+  , ''
+].join('\n');
+
+/**
  * Configuration.
  */
 
@@ -33,6 +48,12 @@ var arg;
 while (args.length) {
   arg = args.shift();
   switch (arg) {
+    case '-h':
+    case '--help':
+    case 'help':
+      console.log(usage);
+      process.exit();
+      break;
     default:
       assets.push(arg);
   }
@@ -43,7 +64,7 @@ while (args.length) {
 if (assets.length) {
   
 } else {
-  abort('<asset ...> required');
+  abort('asset <name ...> required');
 }
 
 /**
