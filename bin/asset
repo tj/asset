@@ -68,6 +68,10 @@ while (args.length) {
       console.log(usage);
       process.exit();
       break;
+    case '-o':
+    case '--out':
+      dest = required(arg);
+      break;
     default:
       assets.push(arg);
   }
@@ -129,6 +133,18 @@ function normalize(asset) {
       name: name
     , version: version
   };
+}
+
+/**
+ * Require argument for `flag`.
+ *
+ * @param {String} flag
+ * @return {String}
+ */
+
+function required(flag) {
+  if (args.length) return args.shift();
+  abort(flag + ' argument required');
 }
 
 /**
