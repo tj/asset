@@ -20,10 +20,12 @@ var args = process.argv.slice(2);
 var assets = [];
 
 /**
- * Destination directory.
+ * Default options.
  */
 
-var dest = process.cwd() + '/public';
+var options = {
+  dest: 'public'
+};
 
 /**
  * Usage information.
@@ -56,6 +58,12 @@ var repo = readJSON(process.env.HOME + '/.assets')
   || readJSON(__dirname + '/../assets.json')
   || {};
 
+// merge config
+
+Object.keys(config).forEach(function(key){
+  options[key] = config[key];
+});
+
 // parse arguments
 
 var arg;
@@ -70,7 +78,7 @@ while (args.length) {
       break;
     case '-o':
     case '--out':
-      dest = required(arg);
+      options.dest = required(arg);
       break;
     default:
       assets.push(arg);
@@ -81,7 +89,7 @@ while (args.length) {
 
 if (assets.length) {
   assets = assets.map(normalize);
-  var install = asset.install(assets, repo, dest);
+  var install = asset.install(assets, repo, options.dest);
 
   install.on('unknown', function(asset){
     abort('unregistered asset ' + asset.name);
