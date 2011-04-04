@@ -24,7 +24,7 @@ var assets = [];
  */
 
 var options = {
-  dest: 'public'
+  out: 'public'
 };
 
 /**
@@ -100,7 +100,7 @@ while (args.length) {
       break;
     case '-o':
     case '--out':
-      options.dest = required(arg);
+      options.out = required(arg);
       break;
     default:
       assets.push(arg);
@@ -112,7 +112,7 @@ while (args.length) {
 if (assets.length) {
   assets = assets.map(normalize);
   console.log();
-  var install = asset.install(assets, repo, options.dest);
+  var install = asset.install(assets, repo, options.out);
 
   install.on('unknown', function(asset){
     abort('unregistered asset ' + asset.name);
