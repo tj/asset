@@ -93,7 +93,10 @@ while (args.length) {
     case 'search':
       console.log();
       asset.search(repo, args.shift(), function(name, entry){
-        log(name, entry.version);
+        var desc = entry.description
+          ? '\033[90m: ' + entry.description + '\033[0m'
+          : '';
+        log(name, entry.version + ' ' + desc);
       });
       console.log();
       process.exit();

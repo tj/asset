@@ -2,41 +2,49 @@
   "raphael": {
     "url": "https://github.com/DmitryBaranovskiy/raphael/raw/v{version}/raphael-min.js",
     "filename": "raphael.js",
+    "description": "raphael vector library",
     "version": "1.4.7"
   },
   "g.raphael": {
     "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.raphael-min.js",
     "filename": "g.raphael.js",
+    "description": "charting for raphael",
     "version": "0.4.1"
   },
   "g.bar": {
     "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.bar-min.js",
     "filename": "g.bar.js",
+    "description": "bar charting for raphael",
     "version": "0.4.1"
   },
   "g.dot": {
     "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.dot-min.js",
     "filename": "g.dot.js",
+    "description": "dot charting for raphael",
     "version": "0.4.1"
   },
   "g.line": {
     "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.line-min.js",
     "filename": "g.line.js",
+    "description": "line charting for raphael",
     "version": "0.4.1"
   },
   "g.pie": {
     "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.pie-min.js",
     "filename": "g.pie.js",
+    "description": "pie charting for raphael",
     "version": "0.4.1"
   },
   "jquery": {
     "url": "http://code.jquery.com/jquery-{version}.min.js",
     "filename": "jquery.js",
+    "description": "jquery core framework",
     "version": "1.5.2"
   },
   "prototype": {
     "url": "http://prototypejs.org/assets/2008/9/29/prototype-{version}.js",
     "filename": "prototype.js",
+    "description": "prototype core framework",
     "version": "1.6.0.3"
   }
 }
