@@ -106,6 +106,10 @@ if (assets.length) {
   install.on('write', function(asset, path){
     log('complete', asset.fullname + ' ' + path);
   });
+
+  install.on('error', function(err){
+    abort(err.message);
+  });
 } else {
   abort('asset <name ...> required');
 }
