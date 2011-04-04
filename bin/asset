@@ -33,7 +33,12 @@ var options = {
 
 var usage = [
     ''
-  , '  Usage: asset [options] <name ...>'
+  , '  Usage: asset [command] [options]'
+  , ''
+  , '  Commands:'
+  , ''
+  , '    install <name ...>   installs the given asset <name ...>'
+  , '    search  [query]      search available assets with optional [query]'
   , ''
   , '  Options:'
   , ''
@@ -84,6 +89,14 @@ while (args.length) {
       break;
     case 'install':
       // ignore
+      break;
+    case 'search':
+      console.log();
+      asset.search(repo, args.shift(), function(name, entry){
+        log(name, entry.version);
+      });
+      console.log();
+      process.exit();
       break;
     case '-o':
     case '--out':
