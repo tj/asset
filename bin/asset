@@ -82,6 +82,9 @@ while (args.length) {
       console.log(asset.version);
       process.exit();
       break;
+    case 'install':
+      // ignore
+      break;
     case '-o':
     case '--out':
       options.dest = required(arg);
