@@ -1,0 +1,49 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var asset = require('../');
+
+/**
+ * Arguments.
+ */
+
+var args = process.argv.slice(2);
+
+/**
+ * Assets to install.
+ */
+
+var assets = [];
+
+// parse arguments
+
+var arg;
+while (args.length) {
+  arg = args.shift();
+  switch (arg) {
+    default:
+      assets.push(arg);
+  }
+}
+
+// assets given
+
+if (assets.length) {
+  
+} else {
+  abort('<asset ...> required');
+}
+
+/**
+ * Abort with `msg`.
+ *
+ * @param {String} msg
+ */
+
+function abort(msg) {
+  console.error('  \033[31m%s\033[0m', msg);
+  process.exit(1);
+}
