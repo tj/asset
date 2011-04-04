@@ -28,5 +28,10 @@
     "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.pie-min.js",
     "filename": "g.pie.js",
     "version": "0.4.1"
+  },
+  "jquery": {
+    "url": "http://code.jquery.com/jquery-{version}.min.js",
+    "filename": "jquery.js",
+    "version": "1.5.2"
   }
 }
