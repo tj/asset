@@ -38,8 +38,16 @@ var usage = [
  * Configuration.
  */
 
-var config = readConfig(process.cwd() + '/.asset')
-  || readConfig(process.env.HOME + '/.asset')
+var config = readJSON(process.cwd() + '/.asset')
+  || readJSON(process.env.HOME + '/.asset')
+  || {};
+
+/**
+ * Repository.
+ */
+
+var repo = readJSON(process.env.HOME + '/.assets')
+  || readJSON(__dirname + '/../assets.json')
   || {};
 
 // parse arguments
@@ -63,7 +71,7 @@ while (args.length) {
 
 if (assets.length) {
   assets = assets.map(normalize);
-  var installer = asset.install(assets);
+  var installer = asset.install(assets, repo);
 
   installer.on('error', function(err){
     throw err;
@@ -124,7 +132,7 @@ function abort(msg) {
  * @return {Object}
  */
 
-function readConfig(path) {
+function readJSON(path) {
   try {
     return JSON.parse(fs.readFileSync(path, 'utf8'));
   } catch (err) {
