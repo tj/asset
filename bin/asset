@@ -4,7 +4,8 @@
  * Module dependencies.
  */
 
-var asset = require('../');
+var asset = require('../')
+  , fs = require('fs');
 
 /**
  * Arguments.
@@ -17,6 +18,14 @@ var args = process.argv.slice(2);
  */
 
 var assets = [];
+
+/**
+ * Configuration.
+ */
+
+var config = readConfig(process.cwd() + '/.asset')
+  || readConfig(process.env.HOME + '/.asset')
+  || {};
 
 // parse arguments
 
@@ -46,4 +55,19 @@ if (assets.length) {
 function abort(msg) {
   console.error('  \033[31m%s\033[0m', msg);
   process.exit(1);
+}
+
+/**
+ * Attempt to read config json at `path`.
+ *
+ * @param {String} path
+ * @return {Object}
+ */
+
+function readConfig(path) {
+  try {
+    return JSON.parse(fs.readFileSync(path, 'utf8'));
+  } catch (err) {
+    // ignore
+  }
 }
