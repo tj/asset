@@ -38,6 +38,7 @@ var usage = [
   , '  Options:'
   , ''
   , '    -o, --out <dir>   output directory defaulting to ./public'
+  , '    -V, --version     output program version'
   , '    -h, --help        display help information'
   , ''
 ].join('\n');
@@ -74,6 +75,11 @@ while (args.length) {
     case '--help':
     case 'help':
       console.log(usage);
+      process.exit();
+      break;
+    case '-V':
+    case '--version':
+      console.log(asset.version);
       process.exit();
       break;
     case '-o':
