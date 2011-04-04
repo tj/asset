@@ -62,9 +62,48 @@ while (args.length) {
 // assets given
 
 if (assets.length) {
-  
+  assets = assets.map(normalize);
+  var installer = asset.install(assets);
+
+  installer.on('error', function(err){
+    throw err;
+  });
+
+  installer.on('end', function(){
+    log('installation', 'complete');
+  });
 } else {
   abort('asset <name ...> required');
+}
+
+/**
+ * Log key / val.
+ *
+ * @param {String} key
+ * @param {String} val
+ */
+
+function log(key, val) {
+  console.log('  \033[90m%s :\033[0m \033[36m%s\033[0m', key, val);
+}
+
+/**
+ * Normalize `asset` string, returning an object
+ * representation of what is to be installed.
+ *
+ * @param {String} asset
+ * @return {Object}
+ */
+
+function normalize(asset) {
+  var parts = asset.split('@')
+    , name = parts.shift()
+    , version = parts.shift();
+
+  return {
+      name: name
+    , version: version
+  };
 }
 
 /**
