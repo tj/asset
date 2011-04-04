@@ -84,7 +84,7 @@ if (assets.length) {
   });
 
   install.on('start', function(asset){
-    log('install', asset.name);
+    log('install', asset.name + '@' + asset.version);
   });
 
   install.on('error', function(err){
