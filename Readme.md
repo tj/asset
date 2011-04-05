@@ -69,7 +69,7 @@
 
 ### Configuration
 
- By default options must be passed via the CLI, however `asset` will also check the `./.asset` and ~/.asset` JSON configuration files, so for example a project may set `{ "out": "public/javascripts" }` if we are mainly working with javascript, however the CLI options will always take precedence.
+ By default options must be passed via the CLI, however `asset` will also check the `./.asset` and `~/.asset` JSON configuration files, so for example a project may set `{ "out": "public/javascripts" }` if we are mainly working with javascript, however the CLI options will always take precedence.
 
 ### The Repository
 
