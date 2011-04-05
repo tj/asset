@@ -56,6 +56,25 @@
       download : g.pie@0.4.1
       complete : g.pie@0.4.1 public/javascripts/g.pie.js
 
+### Dependency Resolution
+
+  Asset currently supports extremely basic dependency mapping, for example below is the output of installing `g.pie`, which depends on `g.raphael`, which in turn depends on `raphael` itself.
+
+    $ asset g.pie
+
+          install : g.pie@0.4.1
+       dependency : g.raphael@0.4.1
+          install : g.raphael@0.4.1
+       dependency : raphael@1.4.7
+          install : raphael@1.4.7
+         download : raphael@1.4.7
+         complete : raphael@1.4.7 public/raphael.js
+         download : g.raphael@0.4.1
+         complete : g.raphael@0.4.1 public/g.raphael.js
+         download : g.pie@0.4.1
+         complete : g.pie@0.4.1 public/g.pie.js
+
+
 ### Installation Destination
 
   To install a specific version, we can use the `@` character:
