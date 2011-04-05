@@ -91,14 +91,7 @@ while (args.length) {
       // ignore
       break;
     case 'search':
-      console.log();
-      asset.search(repo, args.shift(), function(name, entry){
-        var desc = entry.description
-          ? '\033[90m: ' + entry.description + '\033[0m'
-          : '';
-        log(name, entry.version + ' ' + desc);
-      });
-      console.log();
+      search(args.shift());
       process.exit();
       break;
     case '-o':
@@ -146,6 +139,23 @@ if (assets.length) {
   });
 } else {
   abort('asset <name ...> required');
+}
+
+/**
+ * Search using the given `query` string.
+ *
+ * @param {String} query
+ */
+
+function search(query) {
+  console.log();
+  asset.search(repo, query, function(name, entry){
+    var desc = entry.description
+      ? '\033[90m: ' + entry.description + '\033[0m'
+      : '';
+    log(name, entry.version + ' ' + desc);
+  });
+  console.log();
 }
 
 /**
