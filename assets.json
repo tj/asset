@@ -93,7 +93,6 @@
   },
    "script.js": {
     "url": "https://github.com/ded/script.js/blob/master/dist/script.js",
-    "compressed": "script.min.js",
     "description": "Asyncronous JavaScript loader and dependency manager",
     "version": "1.3"
   }
