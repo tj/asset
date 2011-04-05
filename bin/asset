@@ -217,11 +217,11 @@ function log(key, val) {
  */
 
 function normalize(asset) {
-  var captures = asset.match(/([^:@]+)(?:@([^:]+))?(?::(compress(ed)?))?/);
+  var captures = asset.match(/([^:@]+)(?:@([^:]+))?(?::(compress))?/);
   return {
       name: captures[1]
     , version: captures[2]
-    , compress: captures[3] == 'compress'
+    , compress: captures[3] == 'compress' || options.compress
   };
 }
 
