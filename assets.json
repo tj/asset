@@ -1,4 +1,10 @@
 {
+  "underscore": {
+    "url": "https://github.com/documentcloud/underscore/raw/{version}/underscore.js",
+    "compressed": "underscore-min.js",
+    "description": "javascript's utility belt",
+    "version": "1.1.5"
+  },
   "mootools": {
     "url": "http://mootools.net/download/get/mootools-core-{version}-full-compat.js",
     "compressed": "mootools-core-{version}-full-compat-yc.js",
@@ -9,14 +15,12 @@
   "raphael": {
     "url": "https://github.com/DmitryBaranovskiy/raphael/raw/v{version}/raphael.js",
     "compressed": "raphael-min.js",
-    "filename": "raphael.js",
     "description": "raphael vector library",
     "version": "1.4.7"
   },
   "g.raphael": {
     "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.raphael.js",
     "compressed": "g.raphael-min.js",
-    "filename": "g.raphael.js",
     "description": "charting for raphael",
     "version": "0.4.1",
     "dependencies": {
@@ -26,7 +30,6 @@
   "g.bar": {
     "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.bar.js",
     "compressed": "g.bar-min.js",
-    "filename": "g.bar.js",
     "description": "bar charting for raphael",
     "version": "0.4.1",
     "dependencies": {
@@ -36,7 +39,6 @@
   "g.dot": {
     "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.dot.js",
     "compressed": "g.dot-min.js",
-    "filename": "g.dot.js",
     "description": "dot charting for raphael",
     "version": "0.4.1",
     "dependencies": {
@@ -46,7 +48,6 @@
   "g.line": {
     "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.line.js",
     "compressed": "g.line-min.js",
-    "filename": "g.line.js",
     "description": "line charting for raphael",
     "version": "0.4.1",
     "dependencies": {
@@ -56,7 +57,6 @@
   "g.pie": {
     "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.pie.js",
     "compressed": "g.pie-min.js",
-    "filename": "g.pie.js",
     "description": "pie charting for raphael",
     "version": "0.4.1",
     "dependencies": {
