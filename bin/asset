@@ -24,7 +24,8 @@ var assets = [];
  */
 
 var options = {
-  out: 'public'
+    out: 'public'
+  , compress: false
 };
 
 /**
@@ -43,6 +44,7 @@ var usage = [
   , ''
   , '  Options:'
   , ''
+  , '    -c, --compress    compress assets'
   , '    -o, --out <dir>   output directory defaulting to ./public'
   , '    -V, --version     output program version'
   , '    -h, --help        display help information'
@@ -87,6 +89,10 @@ while (args.length) {
     case '--version':
       console.log(asset.version);
       process.exit();
+      break;
+    case '-c':
+    case '--compress':
+      options.compress = true;
       break;
     case 'install':
       // ignore
@@ -214,6 +220,7 @@ function normalize(asset) {
   return {
       name: name
     , version: version
+    , compress: options.compress
   };
 }
 
