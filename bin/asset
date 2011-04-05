@@ -39,6 +39,7 @@ var usage = [
   , ''
   , '    install <name ...>   installs the given asset <name ...>'
   , '    search  [query]      search available assets with optional [query]'
+  , '    info  <name ...>     display verbose information for the given asset <name ...>'
   , ''
   , '  Options:'
   , ''
@@ -91,7 +92,17 @@ while (args.length) {
       // ignore
       break;
     case 'search':
+      console.log();
       search(args.shift());
+      console.log();
+      process.exit();
+      break;
+    case 'info':
+      console.log();
+      while (args.length) {
+        info(args.shift());
+        console.log();
+      }
       process.exit();
       break;
     case '-o':
@@ -142,20 +153,35 @@ if (assets.length) {
 }
 
 /**
+ * Display info for asset `name`.
+ *
+ * @param {String} name
+ */
+
+function info(name){
+  var asset = repo[name];
+  if (!asset) abort('failed to lookup asset "' + name + '"');
+  log('name', name);
+  log('description', asset.description);
+  log('url', asset.url);
+  if (asset.version) log('version', asset.version);
+  if (asset.filename) log('filename', asset.filename);
+  if (asset.dependencies) log('dependencies', Object.keys(asset.dependencies).join(', '));
+}
+
+/**
  * Search using the given `query` string.
  *
  * @param {String} query
  */
 
 function search(query) {
-  console.log();
   asset.search(repo, query, function(name, entry){
     var desc = entry.description
       ? '\033[90m: ' + entry.description + '\033[0m'
       : '';
     log(name, entry.version + ' ' + desc);
   });
-  console.log();
 }
 
 /**

@@ -14,7 +14,8 @@
       Commands:
 
         install <name ...>   installs the given asset <name ...>
-        search  [query]      search available assets with optional [query]
+        search [query]       search available assets with optional [query]
+        info <name ...>      display verbose asset information for <name ...>
 
       Options:
 
@@ -71,6 +72,25 @@
          complete : g.raphael@0.4.1 public/g.raphael.js
          download : g.pie@0.4.1
          complete : g.pie@0.4.1 public/g.pie.js
+
+### Asset Information
+
+  Inspect verbose asset information:
+
+    $ asset info jquery g.raphael
+
+             name : jquery
+      description : jquery core framework
+              url : http://code.jquery.com/jquery-{version}.min.js
+          version : 1.5.2
+         filename : jquery.js
+
+             name : g.raphael
+      description : charting for raphael
+              url : https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.raphael-min.js
+          version : 0.4.1
+         filename : g.raphael.js
+     dependencies : raphael
 
 
 ### Installation Destination
