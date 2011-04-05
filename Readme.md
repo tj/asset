@@ -56,6 +56,12 @@
       download : g.pie@0.4.1
       complete : g.pie@0.4.1 public/javascripts/g.pie.js
 
+### Installation Destination
+
+  To install a specific version, we can use the `@` character:
+  
+      $ asset jquery@1.5.0
+
 ### Search Repository
 
  We can search the repository with an optional query, listing
