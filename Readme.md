@@ -14,7 +14,8 @@
       Commands:
 
         install <name ...>   installs the given asset <name ...>
-        search  [query]      search available assets with optional [query]
+        search [query]       search available assets with optional [query]
+        info <name ...>      display verbose asset information for <name ...>
 
       Options:
 
@@ -28,17 +29,15 @@
 
  By default asset installs to `./public`.
 
-      $ asset raphael g.raphael g.pie
+      $ asset raphael jquery
 
        install : raphael@1.4.7
-       install : g.raphael@0.4.1
-       install : g.pie@0.4.1
+       install : jquery@1.5.2
+      download : jquery@1.5.2
+      complete : jquery@1.5.2 public/jquery.js
       download : raphael@1.4.7
       complete : raphael@1.4.7 public/raphael.js
-      download : g.raphael@0.4.1
-      complete : g.raphael@0.4.1 public/g.raphael.js
-      download : g.pie@0.4.1
-      complete : g.pie@0.4.1 public/g.pie.js
+      
 
 ### Install Destination
 
@@ -55,6 +54,44 @@
       complete : g.raphael@0.4.1 public/javascripts/g.raphael.js
       download : g.pie@0.4.1
       complete : g.pie@0.4.1 public/javascripts/g.pie.js
+
+### Dependency Resolution
+
+  Asset currently supports extremely basic dependency mapping, for example below is the output of installing `g.pie`, which depends on `g.raphael`, which in turn depends on `raphael` itself.
+
+    $ asset g.pie
+
+          install : g.pie@0.4.1
+       dependency : g.raphael@0.4.1
+          install : g.raphael@0.4.1
+       dependency : raphael@1.4.7
+          install : raphael@1.4.7
+         download : raphael@1.4.7
+         complete : raphael@1.4.7 public/raphael.js
+         download : g.raphael@0.4.1
+         complete : g.raphael@0.4.1 public/g.raphael.js
+         download : g.pie@0.4.1
+         complete : g.pie@0.4.1 public/g.pie.js
+
+### Asset Information
+
+  Inspect verbose asset information:
+
+    $ asset info jquery g.raphael
+
+             name : jquery
+      description : jquery core framework
+              url : http://code.jquery.com/jquery-{version}.min.js
+          version : 1.5.2
+         filename : jquery.js
+
+             name : g.raphael
+      description : charting for raphael
+              url : https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.raphael-min.js
+          version : 0.4.1
+         filename : g.raphael.js
+     dependencies : raphael
+
 
 ### Installation Destination
 

@@ -39,6 +39,7 @@ var usage = [
   , ''
   , '    install <name ...>   installs the given asset <name ...>'
   , '    search  [query]      search available assets with optional [query]'
+  , '    info  <name ...>     display verbose information for the given asset <name ...>'
   , ''
   , '  Options:'
   , ''
@@ -92,13 +93,16 @@ while (args.length) {
       break;
     case 'search':
       console.log();
-      asset.search(repo, args.shift(), function(name, entry){
-        var desc = entry.description
-          ? '\033[90m: ' + entry.description + '\033[0m'
-          : '';
-        log(name, entry.version + ' ' + desc);
-      });
+      search(args.shift());
       console.log();
+      process.exit();
+      break;
+    case 'info':
+      console.log();
+      while (args.length) {
+        info(args.shift());
+        console.log();
+      }
       process.exit();
       break;
     case '-o':
@@ -122,15 +126,19 @@ if (assets.length) {
   });
 
   install.on('start', function(asset){
-    log('install', asset.fullname);
+    log('install', name(asset));
   });
 
   install.on('download', function(asset, res){
-    log('download', asset.fullname);
+    log('download', name(asset));
+  });
+
+  install.on('dependency', function(asset, dep){
+    log('dependency', name(dep));
   });
   
   install.on('write', function(asset, path){
-    log('complete', asset.fullname + ' ' + path);
+    log('complete', name(asset) + ' ' + path);
   });
 
   install.on('error', function(err){
@@ -145,6 +153,38 @@ if (assets.length) {
 }
 
 /**
+ * Display info for asset `name`.
+ *
+ * @param {String} name
+ */
+
+function info(name){
+  var asset = repo[name];
+  if (!asset) abort('failed to lookup asset "' + name + '"');
+  log('name', name);
+  log('description', asset.description);
+  log('url', asset.url);
+  if (asset.version) log('version', asset.version);
+  if (asset.filename) log('filename', asset.filename);
+  if (asset.dependencies) log('dependencies', Object.keys(asset.dependencies).join(', '));
+}
+
+/**
+ * Search using the given `query` string.
+ *
+ * @param {String} query
+ */
+
+function search(query) {
+  asset.search(repo, query, function(name, entry){
+    var desc = entry.description
+      ? '\033[90m: ' + entry.description + '\033[0m'
+      : '';
+    log(name, entry.version + ' ' + desc);
+  });
+}
+
+/**
  * Log key / val.
  *
  * @param {String} key
@@ -152,7 +192,7 @@ if (assets.length) {
  */
 
 function log(key, val) {
-  var width = 10
+  var width = 15
     , len = key.length;
   if (len < width) key = Array(width - len).join(' ') + key;
   console.log('  \033[90m%s :\033[0m \033[36m%s\033[0m', key, val);
@@ -198,6 +238,17 @@ function required(flag) {
 function abort(msg) {
   console.error('  \033[31m%s\033[0m', msg);
   process.exit(1);
+}
+
+/**
+ * Return asset name/
+ *
+ * @param {Object} asset
+ * @return {String}
+ */
+
+function name(asset) {
+  return asset.name + '@' + asset.version;
 }
 
 /**
