@@ -208,19 +208,20 @@ function log(key, val) {
  * Normalize `asset` string, returning an object
  * representation of what is to be installed.
  *
+ * Syntax:
+ *
+ *    <name> ['@' version] [':' 'compress']
+ *
  * @param {String} asset
  * @return {Object}
  */
 
 function normalize(asset) {
-  var parts = asset.split('@')
-    , name = parts.shift()
-    , version = parts.shift();
-
+  var captures = asset.match(/([^:@]+)(?:@([^:]+))?(?::(compress(ed)?))?/);
   return {
-      name: name
-    , version: version
-    , compress: options.compress
+      name: captures[1]
+    , version: captures[2]
+    , compress: captures[3] == 'compress'
   };
 }
 

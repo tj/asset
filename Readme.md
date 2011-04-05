@@ -37,7 +37,26 @@
       complete : jquery@1.5.2 public/jquery.js
       download : raphael@1.4.7
       complete : raphael@1.4.7 public/raphael.js
-      
+
+ Asset names accept an optional version and modifiers, taking the form:
+ 
+    <name> ['@' version] [':' 'compress']
+
+ To install all assets (that support compression) as compressed, we can use
+ the `--compress` flag:
+ 
+      $ asset jquery raphael --compress
+
+  However this can be done at the asset-level as well using the `:compress` modifier:
+  
+      $ asset jquery@1.4.3:compress raphael
+
+            install : jquery@1.4.3
+            install : raphael@1.4.7
+           download : jquery@1.4.3
+           complete : jquery@1.4.3 public/jquery.min.js
+           download : raphael@1.4.7
+           complete : raphael@1.4.7 public/raphael.js
 
 ### Install Destination
 
