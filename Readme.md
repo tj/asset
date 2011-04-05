@@ -28,17 +28,15 @@
 
  By default asset installs to `./public`.
 
-      $ asset raphael g.raphael g.pie
+      $ asset raphael jquery
 
        install : raphael@1.4.7
-       install : g.raphael@0.4.1
-       install : g.pie@0.4.1
+       install : jquery@1.5.2
+      download : jquery@1.5.2
+      complete : jquery@1.5.2 public/jquery.js
       download : raphael@1.4.7
       complete : raphael@1.4.7 public/raphael.js
-      download : g.raphael@0.4.1
-      complete : g.raphael@0.4.1 public/g.raphael.js
-      download : g.pie@0.4.1
-      complete : g.pie@0.4.1 public/g.pie.js
+      
 
 ### Install Destination
 
