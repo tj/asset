@@ -125,10 +125,10 @@ if (assets.length) {
     abort('unregistered asset ' + asset.name);
   });
 
-  install.on('start', function(asset){
+  install.on('install', function(asset){
     log('install', name(asset));
   });
-
+  
   install.on('download', function(asset, res){
     log('download', name(asset));
   });
