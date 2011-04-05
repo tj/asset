@@ -1,12 +1,12 @@
 {
   "raphael": {
-    "url": "https://github.com/DmitryBaranovskiy/raphael/raw/v{version}/raphael-min.js",
+    "url": "https://github.com/DmitryBaranovskiy/raphael/raw/v{version}/raphael.js",
     "filename": "raphael.js",
     "description": "raphael vector library",
     "version": "1.4.7"
   },
   "g.raphael": {
-    "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.raphael-min.js",
+    "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.raphael.js",
     "filename": "g.raphael.js",
     "description": "charting for raphael",
     "version": "0.4.1",
@@ -15,7 +15,7 @@
     }
   },
   "g.bar": {
-    "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.bar-min.js",
+    "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.bar.js",
     "filename": "g.bar.js",
     "description": "bar charting for raphael",
     "version": "0.4.1",
@@ -24,7 +24,7 @@
     }
   },
   "g.dot": {
-    "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.dot-min.js",
+    "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.dot.js",
     "filename": "g.dot.js",
     "description": "dot charting for raphael",
     "version": "0.4.1",
@@ -33,7 +33,7 @@
     }
   },
   "g.line": {
-    "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.line-min.js",
+    "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.line.js",
     "filename": "g.line.js",
     "description": "line charting for raphael",
     "version": "0.4.1",
@@ -42,7 +42,7 @@
     }
   },
   "g.pie": {
-    "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.pie-min.js",
+    "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.pie.js",
     "filename": "g.pie.js",
     "description": "pie charting for raphael",
     "version": "0.4.1",
@@ -51,7 +51,7 @@
     }
   },
   "jquery": {
-    "url": "http://code.jquery.com/jquery-{version}.min.js",
+    "url": "http://code.jquery.com/jquery-{version}.js",
     "filename": "jquery.js",
     "description": "jquery core framework",
     "version": "1.5.2"
