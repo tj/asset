@@ -1,4 +1,10 @@
 {
+  "three.js": {
+    "url": "https://github.com/mrdoob/three.js/raw/r{version}/build/Three.js",
+    "description": "3d javascript engine",
+    "filename": "three.js",
+    "version": "38"
+  },
   "underscore": {
     "url": "https://github.com/documentcloud/underscore/raw/{version}/underscore.js",
     "compressed": "underscore-min.js",
