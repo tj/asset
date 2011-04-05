@@ -123,7 +123,7 @@ while (args.length) {
 // assets given
 
 if (assets.length) {
-  assets = assets.map(normalize);
+  assets = assets.map(parse);
   console.log();
   var install = asset.install(assets, repo, options.out);
 
@@ -216,7 +216,7 @@ function log(key, val) {
  * @return {Object}
  */
 
-function normalize(asset) {
+function parse(asset) {
   var captures = asset.match(/([^:@]+)(?:@([^:]+))?((:\w+)*)/)
     , modifiers = captures[3].split(':').slice(1);
 
