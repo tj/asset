@@ -9,19 +9,22 @@
 
 ## Usage
 
-      Usage: asset [command] [options]
+     Usage: asset [command] [options]
 
-      Commands:
+     Commands:
 
-        install <name ...>   installs the given asset <name ...>
-        search [query]       search available assets with optional [query]
-        info <name ...>      display verbose asset information for <name ...>
+       install <name ...>   installs the given asset <name ...>
+       search  [query]      search available assets with optional [query]
+       info  <name ...>     display verbose information for the given asset <name ...>
 
-      Options:
+     Options:
 
-        -o, --out <dir>   output directory defaulting to ./public
-        -V, --version     output program version
-        -h, --help        display help information
+       -c, --compress    compress assets
+       -o, --out <dir>   output directory defaulting to ./public
+       -V, --version     output program version
+       -h, --help        display help information
+
+
 
 ## Examples
 
