@@ -76,6 +76,15 @@
     "description": "jquery core framework",
     "version": "1.5.2"
   },
+  "jquery.validate": { 
+    "url":"http://ajax.aspnetcdn.com/ajax/jquery.validate/{version}/jquery.validate.js",
+    "compressed": "jquery.validate.min.js",
+    "description": "form validation for jquery",
+    "version": "1.8",
+    "dependencies": {
+      "jquery": "1.5.1"
+    }
+  },
   "prototype": {
     "url": "http://prototypejs.org/assets/2008/9/29/prototype-{version}.js",
     "filename": "prototype.js",
