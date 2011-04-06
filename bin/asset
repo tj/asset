@@ -121,18 +121,18 @@ while (args.length) {
   }
 }
 
-// assets given
+// no assets given
 
-if (assets.length) {
-  console.log();
-  mkdir(options.out, function(err){
-    if (err) abort(err.message);
-    install(assets);
-  });
-  process.on('exit', function(){ console.log(); });
-} else {
-  abort('asset <name ...> required');
-}
+if (!assets.length) abort('asset <name ...> required');
+
+// install the assets
+
+console.log();
+mkdir(options.out, function(err){
+  if (err) abort(err.message);
+  install(assets);
+});
+process.on('exit', function(){ console.log(); });
 
 /**
  * Install the given `assets`.
