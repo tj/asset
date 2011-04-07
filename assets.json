@@ -1,4 +1,21 @@
 {
+  "blueprint": {
+    "base": "https://github.com/joshuaclayton/blueprint-css/raw/v{version}/blueprint",
+    "description": "CSS framework",
+    "files": [
+      "ie.css",
+      "print.css",
+      "screen.css",
+      "src/forms.css",
+      "src/grid.css",
+      "src/grid.png",
+      "src/ie.css",
+      "src/print.css",
+      "src/reset.css",
+      "src/typography.css"
+    ],
+    "version": "1.0"
+  },
   "three.js": {
     "url": "https://github.com/mrdoob/three.js/raw/r{version}/build/Three.js",
     "description": "3d javascript engine",

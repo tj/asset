@@ -155,13 +155,21 @@ function install(assets) {
   install.on('download', function(asset, res){
     log('download', name(asset));
   });
+  
+  install.on('file download', function(asset, file, res){
+    log('download', name(asset) + ' ' + file);
+  });
 
   install.on('dependency', function(asset, dep){
     log('dependency', name(dep));
   });
   
-  install.on('write', function(asset, path){
+  install.on('complete', function(asset, path){
     log('complete', name(asset) + ' ' + path);
+  });
+  
+  install.on('complete files', function(asset, files){
+    log('complete', name(asset) + ' ' + files.length + ' files');
   });
 
   install.on('error', function(err){
