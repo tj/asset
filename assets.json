@@ -1,7 +1,7 @@
 {
   "blueprint": {
     "base": "https://github.com/joshuaclayton/blueprint-css/raw/v{version}/blueprint",
-    "description": "CSS framework",
+    "description": "css framework",
     "tags": ["css"],
     "files": [
       "ie.css",
