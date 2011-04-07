@@ -128,20 +128,20 @@
     "version": "1.3"
   },
   "jquery-mobile": {
-    "url": "http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.js",
+    "url": "http://code.jquery.com/mobile/{version}/jquery.mobile-{version}.js",
     "description": "touch-optimized eeb framework for smartphones & tablets",
     "filename": "jquery.mobile.js",
-    "tag": ["js", "jquery"],
+    "tags": ["js", "jquery"],
     "version": "1.0a4",
     "dependencies": {
       "jquery": "1.5.1"
     }
   },
   "processing.js": {
-    "url": "http://processingjs.org/content/download/processing-js-1.1.0/processing-1.1.0.js",
+    "url": "http://processingjs.org/content/download/processing-js-{version}/processing-{version}.js",
     "description": "a port of the Processing visualization language",
     "filename": "processing.js",
-    "tag": ["js"],
+    "tags": ["js"],
     "version": "1.1.0"
   } 
 }
