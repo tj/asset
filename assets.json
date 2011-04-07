@@ -1,6 +1,6 @@
 {
   "blueprint": {
-    "base": "https://github.com/joshuaclayton/blueprint-css/v{version}/master/blueprint",
+    "base": "https://github.com/joshuaclayton/blueprint-css/raw/v{version}/blueprint",
     "description": "CSS framework",
     "files": [
       "ie.css",
@@ -12,7 +12,7 @@
       "src/ie.css",
       "src/print.css",
       "src/reset.css",
-      "src/typeography.css"
+      "src/typography.css"
     ],
     "version": "1.0"
   },
