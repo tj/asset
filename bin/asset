@@ -117,7 +117,11 @@ while (args.length) {
       options.out = required(arg);
       break;
     default:
-      assets.push(arg);
+      if (~arg.indexOf('/')) {
+        options.out = arg;
+      } else {
+        assets.push(arg);
+      }
   }
 }
 

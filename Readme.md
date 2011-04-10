@@ -77,6 +77,10 @@
       download : g.pie@0.4.1
       complete : g.pie@0.4.1 public/javascripts/g.pie.js
 
+  Alternatively passing a directory name containing "/" will work as well, since `asset` knows this is not an asset, and becomes equivalent to `--out <dir>`:
+    
+       $ asset raphael jquery public/javascripts
+
 ### Dependency Resolution
 
   Asset currently supports extremely basic dependency mapping, for example below is the output of installing `g.pie`, which depends on `g.raphael`, which in turn depends on `raphael` itself.
