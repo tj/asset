@@ -1,4 +1,18 @@
 
+0.2.0 / 2011-04-09 
+==================
+
+  * Added `jquery-mobile`
+  * Added `processing.js`
+  * Added `blueprint`
+  * Added; assume arg with "/" is `--out <dir>`. closes #10
+  * Added; search tags for search query
+  * Added `tags` to all assets
+  * Added basic "complex" support :) aka an array of files. Closes #4
+  * Added `utils.mkdir()`
+  * Fixed; create destination directory. Closes #8
+  * Fixed several `{version}` substrings within the url
+
 0.1.0 / 2011-04-05 
 ==================
 
