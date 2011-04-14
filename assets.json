@@ -220,5 +220,12 @@
     "dependencies": {
       "d3": "1.11.0"
     }
+  },
+  "protovis": {
+    "url": "https://github.com/mbostock/protovis/raw/v{version}/protovis.js",
+    "description": "A visualization toolkit for JavaScript using SVG.",
+    "filename": "protovis.js",
+    "tags": ["js", "svg"],
+    "version": "3.3.1"
   }
 }
