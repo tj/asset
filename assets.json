@@ -143,5 +143,82 @@
     "filename": "processing.js",
     "tags": ["js"],
     "version": "1.1.0"
-  } 
+  },
+  "d3": {
+    "url": "https://github.com/mbostock/d3/raw/v{version}/d3.js",
+    "description": "A JavaScript visualization library for HTML and SVG.",
+    "filename": "d3.js",
+    "tags": ["js", "svg"],
+    "version": "1.11.0"
+  },
+  "d3.behavior": {
+    "url": "https://github.com/mbostock/d3/raw/v{version}/d3.behavior.js",
+    "description": "Event module for d3. A JavaScript visualization library for HTML and SVG.",
+    "filename": "d3.behavior.js",
+    "tags": ["js", "svg"],
+    "version": "1.11.0",
+    "dependencies": {
+      "d3": "1.11.0"
+    }
+  },
+  "d3.chart": {
+    "url": "https://github.com/mbostock/d3/raw/v{version}/d3.chart.js",
+    "description": "Chart module for d3. A JavaScript visualization library for HTML and SVG.",
+    "filename": "d3.chart.js",
+    "tags": ["js", "svg"],
+    "version": "1.11.0",
+    "dependencies": {
+      "d3": "1.11.0"
+    }
+  },
+  "d3.csv": {
+    "url": "https://github.com/mbostock/d3/raw/v{version}/d3.csv.js",
+    "description": "CSV parser module for d3. A JavaScript visualization library for HTML and SVG.",
+    "filename": "d3.csv.js",
+    "tags": ["js", "svg"],
+    "version": "1.11.0",
+    "dependencies": {
+      "d3": "1.11.0"
+    }
+  },
+  "d3.geo": {
+    "url": "https://github.com/mbostock/d3/raw/v{version}/d3.geo.js",
+    "description": "Geo module for d3. A JavaScript visualization library for HTML and SVG.",
+    "filename": "d3.geo.js",
+    "tags": ["js", "svg"],
+    "version": "1.11.0",
+    "dependencies": {
+      "d3": "1.11.0"
+    }
+  },
+  "d3.geom": {
+    "url": "https://github.com/mbostock/d3/raw/v{version}/d3.geom.js",
+    "description": "Geometry module for d3. A JavaScript visualization library for HTML and SVG.",
+    "filename": "d3.geom.js",
+    "tags": ["js", "svg"],
+    "version": "1.11.0",
+    "dependencies": {
+      "d3": "1.11.0"
+    }
+  },
+  "d3.layout": {
+    "url": "https://github.com/mbostock/d3/raw/v{version}/d3.layout.js",
+    "description": "Layout module for d3. A JavaScript visualization library for HTML and SVG.",
+    "filename": "d3.layout.js",
+    "tags": ["js", "svg"],
+    "version": "1.11.0",
+    "dependencies": {
+      "d3": "1.11.0"
+    }
+  },
+  "d3.time": {
+    "url": "https://github.com/mbostock/d3/raw/v{version}/d3.time.js",
+    "description": "Time module for d3. A JavaScript visualization library for HTML and SVG.",
+    "filename": "d3.time.js",
+    "tags": ["js", "svg"],
+    "version": "1.11.0",
+    "dependencies": {
+      "d3": "1.11.0"
+    }
+  }
 }
