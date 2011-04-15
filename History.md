@@ -1,4 +1,12 @@
 
+0.3.0 / 2011-04-14 
+==================
+
+  * Added date.js support [caged]
+  * Added support for polymaps [caged]
+  * Added support for protovis [caged]
+  * Added support for d3 [caged]
+
 0.2.0 / 2011-04-09 
 ==================
 
