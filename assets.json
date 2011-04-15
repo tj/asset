@@ -17,6 +17,12 @@
     ],
     "version": "1.0"
   },
+  "jade": {
+    "url": "https://github.com/visionmedia/jade/raw/{version}/jade.js",
+    "description": "jade template engine",
+    "tags": ["template"],
+    "version": "0.10.4"
+  },
   "three.js": {
     "url": "https://github.com/mrdoob/three.js/raw/r{version}/build/Three.js",
     "description": "3d javascript engine",
