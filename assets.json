@@ -234,5 +234,12 @@
     "filename": "polymaps.js",
     "tags": ["js", "maps", "mapping"],
     "version": "2.5.0"
+  },
+  "date.js": {
+    "url": "http://datejs.googlecode.com/files/date.js",
+    "description": "Datejs is an open source JavaScript Date library for parsing, formatting and processing.",
+    "filename": "date.js",
+    "tags": ["js", "date", "time"],
+    "version": "1.0 Alpha-1"
   }
 }
