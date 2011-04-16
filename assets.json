@@ -237,5 +237,12 @@
     "description": "Datejs is an open source JavaScript Date library for parsing, formatting and processing.",
     "tags": ["js", "date", "time"],
     "version": "1.0 Alpha-1"
+  },
+  "backbone": {
+    "url": "https://github.com/documentcloud/backbone/raw/{version}/backbone.js",
+    "compressed": "backbone-min.js"
+    "description": "Backbone supplies structure to JS Apps by providing models, views, collections, and events",
+    "tags": ["js"],
+    "version": "0.3.3"
   }
 }
