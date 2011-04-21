@@ -6,6 +6,7 @@
 
 var asset = require('../')
   , exec = require('child_process').exec
+  , tty = require('tty')
   , fs = require('fs');
 
 /**
@@ -205,10 +206,21 @@ function info(name){
  */
 
 function search(query) {
+  var size = tty.getWindowSize()
+    , padding = 30
+    , height = size.shift()
+    , width = size.shift() - padding;
+
   asset.search(repo, query, function(name, entry){
-    var desc = entry.description
-      ? '\033[90m: ' + entry.description + '\033[0m'
+    var desc = entry.description;
+    if (desc.length > width) {
+      desc = desc.substr(0, width - 3) + '...';
+    }
+
+    desc = desc
+      ? '\033[90m: ' + desc + '\033[0m'
       : '';
+
     log(name, entry.version + ' ' + desc);
   });
 }
