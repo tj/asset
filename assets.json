@@ -250,5 +250,17 @@
     "description": "zepto.js is a minimalist inlinable framework for mobile WebKit browsers, with a jQuery-like chaining syntax",
     "tags": ["js"],
     "version": "0.5"
+  },
+  "iscroll": {
+    "url": "https://github.com/cubiq/iscroll/raw/master/src/iscroll.js",
+    "description": "Hardware accelerated scroll for mobile webkit",
+    "tags": ["js"],
+    "version": "4.0"
+  },
+  "iscroll-lite": {
+    "url": "https://github.com/cubiq/iscroll/raw/master/src/iscroll-lite.js",
+    "description": "Hardware accelerated scroll for mobile webkit",
+    "tags": ["js"],
+    "version": "4.0"
   }
 }
