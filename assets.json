@@ -135,7 +135,7 @@
   },
   "jquery-mobile": {
     "url": "http://code.jquery.com/mobile/{version}/jquery.mobile-{version}.js",
-    "description": "touch-optimized eeb framework for smartphones & tablets",
+    "description": "touch-optimized web framework for smartphones & tablets",
     "filename": "jquery.mobile.js",
     "tags": ["js", "jquery"],
     "version": "1.0a4",
