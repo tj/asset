@@ -1,4 +1,11 @@
 
+0.3.2 / 2011-04-27 
+==================
+
+  * Added Modernizr and Yepnope assets [Mike Cantelon]
+  * Added iscroll and iscroll-lite [Mike Cantelon]
+  * Added ellipsis to long descriptions within search
+
 0.3.0 / 2011-04-14 
 ==================
 
