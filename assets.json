@@ -135,7 +135,7 @@
   },
   "jquery-mobile": {
     "url": "http://code.jquery.com/mobile/{version}/jquery.mobile-{version}.js",
-    "description": "touch-optimized eeb framework for smartphones & tablets",
+    "description": "touch-optimized web framework for smartphones & tablets",
     "filename": "jquery.mobile.js",
     "tags": ["js", "jquery"],
     "version": "1.0a4",
@@ -262,5 +262,17 @@
     "description": "Hardware accelerated scroll for mobile webkit",
     "tags": ["js"],
     "version": "4.0"
+  },
+  "modernizr": {
+    "url": "https://github.com/Modernizr/Modernizr/raw/v{version}/modernizr.js",
+    "description": "Feature detection to test browsers against upcoming features",
+    "tags": ["js", "css", "detection"],
+    "version": "1.7"
+  },
+  "yepnope": {
+    "url": "https://github.com/SlexAxton/yepnope.js/raw/v{version}/yepnope.js",
+    "description": "Conditional loader for polyfills",
+    "tags": ["js", "detection"],
+    "version": "1.0.1"
   }
 }
