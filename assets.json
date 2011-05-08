@@ -274,5 +274,11 @@
     "description": "Conditional loader for polyfills",
     "tags": ["js", "detection"],
     "version": "1.0.1"
+  },
+  "live.js": {
+    "url": "http://livejs.com/live.js",
+    "description": "Live.js makes sure you're always looking at the latest version of the page you're working on, whether you're writing HTML, CSS or Javascript",
+    "tags": ["js"],
+    "version": "3.0"
   }
 }
