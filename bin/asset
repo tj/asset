@@ -43,6 +43,7 @@ var usage = [
   , '    install <name ...>   installs the given asset <name ...>'
   , '    search  [query]      search available assets with optional [query]'
   , '    info  <name ...>     display verbose information for the given asset <name ...>'
+  , '    none                 install dependencies from ./assets.json'
   , ''
   , '  Options:'
   , ''
@@ -126,7 +127,15 @@ while (args.length) {
   }
 }
 
-// no assets given
+// parse the asset strings or ./assets.json
+
+if (assets.length) {
+  assets = assets.map(parse);
+} else {
+  assets = assetsFromObject(readJSON('assets.json'));
+}
+
+// ensure we have assets
 
 if (!assets.length) abort('asset <name ...> required');
 
@@ -140,13 +149,26 @@ mkdir(options.out, function(err){
 process.on('exit', function(){ console.log(); });
 
 /**
+ * Install assets from JSON `obj`.
+ * 
+ * @param {Object} obj
+ */
+
+function assetsFromObject(obj) {
+  var arr = [];
+  for (var asset in obj) {
+    arr.push({ name: asset, version: obj[asset] });
+  }
+  return arr;
+}
+
+/**
  * Install the given `assets`.
  *
  * @param {Array} assets
  */
 
 function install(assets) {
-  assets = assets.map(parse);
   var install = asset.install(assets, repo, options.out);
 
   install.on('unknown', function(asset){
