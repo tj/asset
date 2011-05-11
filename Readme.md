@@ -16,6 +16,7 @@
        install <name ...>   installs the given asset <name ...>
        search  [query]      search available assets with optional [query]
        info  <name ...>     display verbose information for the given asset <name ...>
+       none                 install dependencies from ./assets.json
 
      Options:
 
@@ -135,6 +136,35 @@
       install : raphael@1.4.7
      download : raphael@1.4.7
      complete : raphael@1.4.7 public/raphael.js
+
+### assets.json
+
+ By adding `./assets.json` you can store application dependencies, and install them quickly and easily with a single command `asset`. For example this file may contain one or more deps:
+ 
+     {
+         "g.raphael": "0.4.1"
+       , "jquery": "1.5.2"
+       , "modernizr": "1.7"
+     }
+ 
+
+ Installed with the command:
+ 
+     $ asset
+     
+        install : g.raphael@0.4.1
+     dependency : raphael@1.4.7
+        install : raphael@1.4.7
+        install : jquery@1.5.2
+        install : modernizr@1.7
+       download : jquery@1.5.2
+       complete : jquery@1.5.2 public/jquery.js
+       download : raphael@1.4.7
+       complete : raphael@1.4.7 public/raphael.js
+       download : g.raphael@0.4.1
+       complete : g.raphael@0.4.1 public/g.raphael.js
+       download : modernizr@1.7
+       complete : modernizr@1.7 public/modernizr.js
 
 ### Configuration
 
