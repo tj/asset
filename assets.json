@@ -155,7 +155,7 @@
     "description": "A JavaScript visualization library for HTML and SVG.",
     "filename": "d3.js",
     "tags": ["js", "svg"],
-    "version": "1.11.0"
+    "version": "1.15.1"
   },
   "d3.behavior": {
     "url": "https://github.com/mbostock/d3/raw/v{version}/d3.behavior.js",
@@ -163,7 +163,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.11.0"
+      "d3": "1.15.1"
     }
   },
   "d3.chart": {
@@ -172,7 +172,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.11.0"
+      "d3": "1.15.1"
     }
   },
   "d3.csv": {
@@ -181,7 +181,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.11.0"
+      "d3": "1.15.1"
     }
   },
   "d3.geo": {
@@ -190,7 +190,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.11.0"
+      "d3": "1.15.1"
     }
   },
   "d3.geom": {
@@ -199,7 +199,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.11.0"
+      "d3": "1.15.1"
     }
   },
   "d3.layout": {
@@ -208,7 +208,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.11.0"
+      "d3": "1.15.1"
     }
   },
   "d3.time": {
@@ -217,7 +217,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.11.0"
+      "d3": "1.15.1"
     }
   },
   "protovis": {
