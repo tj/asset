@@ -108,7 +108,7 @@
     "compressed": "jquery-{version}.min.js",
     "tags": ["js", "jquery"],
     "filename": "jquery.js",
-    "version": "1.5.2"
+    "version": "1.6.1"
   },
   "jquery.validate": { 
     "url":"http://ajax.aspnetcdn.com/ajax/jquery.validate/{version}/jquery.validate.js",
