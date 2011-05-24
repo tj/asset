@@ -35,7 +35,7 @@
     "description": "javascript's utility belt",
     "compressed": "underscore-min.js",
     "tags": ["js", "utilities"],
-    "version": "1.1.5"
+    "version": "1.1.6"
   },
   "mootools": {
     "url": "http://mootools.net/download/get/mootools-core-{version}-full-compat.js",
