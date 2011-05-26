@@ -35,7 +35,7 @@
     "description": "javascript's utility belt",
     "compressed": "underscore-min.js",
     "tags": ["js", "utilities"],
-    "version": "1.1.5"
+    "version": "1.1.6"
   },
   "mootools": {
     "url": "http://mootools.net/download/get/mootools-core-{version}-full-compat.js",
@@ -108,7 +108,7 @@
     "compressed": "jquery-{version}.min.js",
     "tags": ["js", "jquery"],
     "filename": "jquery.js",
-    "version": "1.5.2"
+    "version": "1.6.1"
   },
   "jquery.validate": { 
     "url":"http://ajax.aspnetcdn.com/ajax/jquery.validate/{version}/jquery.validate.js",
@@ -155,7 +155,7 @@
     "description": "A JavaScript visualization library for HTML and SVG.",
     "filename": "d3.js",
     "tags": ["js", "svg"],
-    "version": "1.15.1"
+    "version": "1.17.0"
   },
   "d3.behavior": {
     "url": "https://github.com/mbostock/d3/raw/v{version}/d3.behavior.js",
@@ -163,7 +163,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.15.1"
+      "d3": "1.17.0"
     }
   },
   "d3.chart": {
@@ -172,7 +172,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.15.1"
+      "d3": "1.17.0"
     }
   },
   "d3.csv": {
@@ -181,7 +181,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.15.1"
+      "d3": "1.17.0"
     }
   },
   "d3.geo": {
@@ -190,7 +190,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.15.1"
+      "d3": "1.17.0"
     }
   },
   "d3.geom": {
@@ -199,7 +199,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.15.1"
+      "d3": "1.17.0"
     }
   },
   "d3.layout": {
@@ -208,7 +208,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.15.1"
+      "d3": "1.17.0"
     }
   },
   "d3.time": {
@@ -217,7 +217,7 @@
     "tags": ["js", "svg"],
     "version": "1.11.0",
     "dependencies": {
-      "d3": "1.15.1"
+      "d3": "1.17.0"
     }
   },
   "protovis": {
