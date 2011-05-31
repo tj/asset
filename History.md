@@ -1,4 +1,12 @@
 
+0.4.0 / 2011-05-30 
+==================
+
+  * Added `asset` command to install from ./assets.json. Closes #18
+  * Added `live.js` support
+  * Added `iscroll` and `iscroll-lite`
+  * Added `zepto`
+
 0.3.2 / 2011-04-27 
 ==================
 
