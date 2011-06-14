@@ -286,5 +286,12 @@
     "description": "Live.js makes sure you're always looking at the latest version of the page you're working on, whether you're writing HTML, CSS or Javascript",
     "tags": ["js"],
     "version": "3.0"
+  },
+  "fidel": {
+    "url": "https://raw.github.com/jgallen23/fidel/master/fidel.js",
+    "compressed": "fidel.min.js",
+    "description": "Fidel is a simple, lightweight ui controller library",
+    "tags": ["js"],
+    "version": "1.0.2"
   }
 }
