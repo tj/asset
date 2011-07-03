@@ -299,5 +299,19 @@
     "description": "A string utility library",
     "tags": ["js", "string", "template", "format"],
     "version": "1.0.3"
+  },
+  "resistance": {
+    "url": "https://raw.github.com/jgallen23/resistance/master/resistance.js",
+    "compressed": "resistance.min.js",
+    "description": "A simple async flow control library",
+    "tags": ["js", "flow", "async"],
+    "version": "1.0.1"
+  },
+  "pagie": {
+    "url": "https://raw.github.com/jgallen23/pagie/master/pagie.js",
+    "compressed": "pagie.min.js",
+    "description": "A simple pagination class",
+    "tags": ["js", "pagination"],
+    "version": "0.0.1"
   }
 }
