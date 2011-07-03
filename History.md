@@ -1,4 +1,12 @@
 
+0.4.2 / 2011-07-02 
+==================
+
+  * Added `resistance`
+  * Added `pagie`
+  * Added `str.js`
+  * Added `fidel`
+
 0.4.1 / 2011-06-04 
 ==================
 
