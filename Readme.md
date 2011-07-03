@@ -5,7 +5,7 @@
 
 ## Installation
 
-    $ npm install asset
+    $ npm install -g asset
 
 ## Usage
 
