@@ -292,7 +292,7 @@
     "compressed": "fidel.min.js",
     "description": "Fidel is a simple, lightweight ui controller library",
     "tags": ["js"],
-    "version": "1.0.2"
+    "version": "1.1.2"
   },
   "str.js": {
     "url": "https://raw.github.com/jgallen23/str.js/master/str.js",
