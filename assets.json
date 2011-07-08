@@ -34,7 +34,7 @@
     "description": "3d javascript engine",
     "tags": ["js", "3d"],
     "filename": "three.js",
-    "version": "38"
+    "version": "42"
   },
   "underscore": {
     "url": "https://github.com/documentcloud/underscore/raw/{version}/underscore.js",
