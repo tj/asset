@@ -249,7 +249,7 @@
     "compressed": "backbone-min.js",
     "description": "Backbone supplies structure to Javascript Apps by providing models, views, collections, and events",
     "tags": ["js"],
-    "version": "0.3.3"
+    "version": "0.5.1"
   },
   "zepto": {
     "url": "https://github.com/madrobby/zepto/raw/v{version}/src/zepto.js",
