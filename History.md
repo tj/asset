@@ -1,4 +1,12 @@
 
+0.4.4 / 2011-07-15 
+==================
+
+  * Added `mustache.js`
+  * Updated `jQuery`
+  * Updated `underscore`
+  * Updated `backbone`
+
 0.4.3 / 2011-07-08 
 ==================
 
