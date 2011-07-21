@@ -18,7 +18,7 @@
     "version": "1.0"
   },
   "caustic": {
-    "url": "https://github.com/visionmedia/caustic/raw/{version}/caustic.js",
+    "url": "https://github.com/visionmedia/caustic/raw/{version}/build/caustic.js",
     "description": "Experimental view system for jQuery",
     "tags": ["templates", "view"],
     "version": "0.0.3"
