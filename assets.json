@@ -17,6 +17,12 @@
     ],
     "version": "1.0"
   },
+  "superagent": {
+    "url": "https://raw.github.com/visionmedia/superagent/{version}/superagent.js",
+    "description": "Ajax with less suck",
+    "tags": ["request", "ajax"],
+    "version": "0.1.0"
+  },
   "caustic": {
     "url": "https://github.com/visionmedia/caustic/raw/{version}/build/caustic.js",
     "description": "Experimental view system for jQuery",
