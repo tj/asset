@@ -17,6 +17,12 @@
     ],
     "version": "1.0"
   },
+  "eventemitter2": {
+    "url": "https://github.com/hij1nx/EventEmitter2/blob/v{version}/lib/eventemitter2.js",
+    "description": "nodejs-style event emitter with namespaces, wildcards, TTL etc",
+    "tags": ["events", "emitter", "node"],
+    "version": "0.4.1"
+  },
   "superagent": {
     "url": "https://raw.github.com/visionmedia/superagent/{version}/superagent.js",
     "description": "Ajax with less suck",
