@@ -17,6 +17,29 @@
     ],
     "version": "1.0"
   },
+  "bootstrap": {
+    "url": "https://github.com/twitter/bootstrap/raw/v{version}/bootstrap-{version}.css",
+    "compressed": "bootstrap-{version}.min.css",
+    "description": "CSS toolkit from Twitter",
+    "tags": ["css", "twitter"],
+    "version": "1.1.1"
+  },
+  "bootstrap-less": {
+    "base": "https://github.com/twitter/bootstrap/raw/v{version}",
+    "description": "CSS toolkit from Twitter (LESS Source)",
+    "tags": ["css", "twitter", "less"],
+    "files": [
+      "lib/bootstrap.less",
+      "lib/forms.less",
+      "lib/patterns.less",
+      "lib/preboot.less",
+      "lib/reset.less",
+      "lib/scaffolding.less",
+      "lib/tables.less",
+      "lib/type.less"
+    ],
+    "version": "1.1.1"
+  },
   "eventemitter2": {
     "url": "https://github.com/hij1nx/EventEmitter2/blob/v{version}/lib/eventemitter2.js",
     "description": "nodejs-style event emitter with namespaces, wildcards, TTL etc",
