@@ -7,6 +7,7 @@
 var asset = require('../')
   , exec = require('child_process').exec
   , tty = require('tty')
+  , path = require('path')
   , fs = require('fs');
 
 /**
@@ -157,7 +158,7 @@ process.on('exit', function(){ console.log(); });
 function assetsFromObject(obj) {
   var arr = [];
   for (var asset in obj) {
-    arr.push({ name: asset, version: obj[asset] });
+    arr.push({ name: asset });
   }
   return arr;
 }
@@ -169,7 +170,11 @@ function assetsFromObject(obj) {
  */
 
 function install(assets) {
-  var install = asset.install(assets, repo, options.out);
+  var outpath = (options.out.charAt(0) != '/') ? 
+    path.normalize(process.cwd() + '/' + options.out) : 
+    options.out;
+  
+  var install = asset.install(assets, repo, outpath);
 
   install.on('unknown', function(asset){
     abort('unregistered asset ' + asset.name);
@@ -184,15 +189,15 @@ function install(assets) {
   });
   
   install.on('file download', function(asset, file, res){
-    log('download', name(asset) + ' ' + file);
+    log('download', name(asset) + ' ' + options.out + '/' + file);
   });
 
   install.on('dependency', function(asset, dep){
     log('dependency', name(dep));
   });
   
-  install.on('complete', function(asset, path){
-    log('complete', name(asset) + ' ' + path);
+  install.on('complete', function(asset, file){
+    log('complete', name(asset) + ' ' + options.out + '/' + path.basename(file));
   });
   
   install.on('complete files', function(asset, files){
@@ -207,18 +212,20 @@ function install(assets) {
 /**
  * Display info for asset `name`.
  *
- * @param {String} name
+ * @param {String} query
  */
 
-function info(name){
-  var asset = repo[name];
-  if (!asset) abort('failed to lookup asset "' + name + '"');
-  log('name', name);
-  log('description', asset.description);
-  log('url', asset.url);
-  if (asset.version) log('version', asset.version);
-  if (asset.filename) log('filename', asset.filename);
-  if (asset.dependencies) log('dependencies', Object.keys(asset.dependencies).join(', '));
+function info(query){
+  asset.search(repo, query, function(name, entry) {
+    if(query == name) {
+      log('name', name);
+      log('description', entry.description);
+      log('url', entry.url);
+      if (entry.version) log('version', entry.version);
+      if (entry.filename) log('filename', entry.filename);
+      if (entry.dependencies) log('dependencies', Object.keys(entry.dependencies).join(', '));
+    }
+  });
 }
 
 /**
@@ -232,7 +239,6 @@ function search(query) {
     , padding = 30
     , height = size.shift()
     , width = size.shift() - padding;
-
   asset.search(repo, query, function(name, entry){
     var desc = entry.description;
     if (desc.length > width) {
