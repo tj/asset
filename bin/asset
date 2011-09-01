@@ -67,7 +67,7 @@ var config = readJSON(process.cwd() + '/.asset')
  */
 
 var repo = readJSON(process.env.HOME + '/.assets')
-  || readJSON(__dirname + '/../assets_test.json')
+  || readJSON(__dirname + '/../assets.json')
   || {};
 
 // merge config
@@ -234,7 +234,6 @@ function search(query) {
     , padding = 30
     , height = size.shift()
     , width = size.shift() - padding;
-
   asset.search(repo, query, function(name, entry){
     var desc = entry.description;
     if (desc.length > width) {
