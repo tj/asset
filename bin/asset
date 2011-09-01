@@ -67,7 +67,7 @@ var config = readJSON(process.cwd() + '/.asset')
  */
 
 var repo = readJSON(process.env.HOME + '/.assets')
-  || readJSON(__dirname + '/../assets.json')
+  || readJSON(__dirname + '/../assets_test.json')
   || {};
 
 // merge config
@@ -207,18 +207,20 @@ function install(assets) {
 /**
  * Display info for asset `name`.
  *
- * @param {String} name
+ * @param {String} query
  */
 
-function info(name){
-  var asset = repo[name];
-  if (!asset) abort('failed to lookup asset "' + name + '"');
-  log('name', name);
-  log('description', asset.description);
-  log('url', asset.url);
-  if (asset.version) log('version', asset.version);
-  if (asset.filename) log('filename', asset.filename);
-  if (asset.dependencies) log('dependencies', Object.keys(asset.dependencies).join(', '));
+function info(query){
+  asset.search(repo, query, function(name, entry) {
+    if(query == name) {
+      log('name', name);
+      log('description', entry.description);
+      log('url', entry.url);
+      if (entry.version) log('version', entry.version);
+      if (entry.filename) log('filename', entry.filename);
+      if (entry.dependencies) log('dependencies', Object.keys(entry.dependencies).join(', '));
+    }
+  });
 }
 
 /**
