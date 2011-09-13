@@ -1,4 +1,10 @@
 
+0.4.8 / 2011-09-13 
+==================
+
+  * Added Twitter's bootstrap CSS toolkit in assets.json
+  * Added mkdirp dependency
+
 0.4.7 / 2011-08-20 
 ==================
 
