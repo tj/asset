@@ -360,7 +360,7 @@
     "compressed": "dice-roll.min.js",
     "description": "An A/B testing library",
     "tags": ["js", "ab", "testing"],
-    "version": "0.0.3"
+    "version": "0.0.4"
   },
   "cookie-monster": {
     "url": "https://raw.github.com/jgallen23/cookie-monster/{version}/dist/monster.js",
