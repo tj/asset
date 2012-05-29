@@ -1,0 +1,10 @@
+{
+  "url": "http://code.jquery.com/mobile/{version}/jquery.mobile-{version}.js",
+  "description": "touch-optimized web framework for smartphones & tablets",
+  "filename": "jquery.mobile.js",
+  "tags": [ "js", "jquery" ],
+  "version": "1.0a4",
+  "dependencies": {
+    "jquery": "1.5.1"
+  }
+}

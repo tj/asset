@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/mrdoob/three.js/raw/r{version}/build/Three.js",
+  "description": "3d javascript engine",
+  "tags": [ "js", "3d" ],
+  "filename": "three.js",
+  "version": "42"
+}

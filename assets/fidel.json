@@ -1,0 +1,7 @@
+{
+  "url": "https://raw.github.com/jgallen23/fidel/master/dist/fidel.js",
+  "compressed": "fidel.min.js",
+  "description": "Fidel is a simple, lightweight ui controller library",
+  "tags": [ "js" ],
+  "version": "1.1.2"
+}

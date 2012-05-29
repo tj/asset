@@ -1,0 +1,6 @@
+{
+  "url": "https://github.com/visionmedia/caustic/raw/{version}/build/caustic.js",
+  "description": "Experimental view system for jQuery",
+  "tags": [ "templates", "view" ],
+  "version": "0.0.5"
+}

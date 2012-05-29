@@ -1,0 +1,6 @@
+{
+  "url": "https://raw.github.com/janl/mustache.js/{version}/mustache.js",
+  "description": "Minimal templating with {{mustaches}} in JavaScript",
+  "version": "0.3.0",
+  "tags": [ "js", "templates", "templating" ]
+}

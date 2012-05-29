@@ -1,0 +1,10 @@
+{
+  "url": "http://ajax.aspnetcdn.com/ajax/jquery.validate/{version}/jquery.validate.js",
+  "compressed": "jquery.validate.min.js",
+  "description": "form validation for jquery",
+  "tags": [ "js", "jquery" ],
+  "version": "1.8",
+  "dependencies": {
+    "jquery": "1.5.1"
+  }
+}

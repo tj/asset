@@ -1,0 +1,6 @@
+{
+  "url": "https://raw.github.com/jgallen23/str.js/master/str.js",
+  "description": "A string utility library",
+  "tags": [ "js", "string", "template", "format" ],
+  "version": "1.0.3"
+}

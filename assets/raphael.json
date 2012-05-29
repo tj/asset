@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/DmitryBaranovskiy/raphael/raw/v{version}/raphael.js",
+  "description": "raphael vector library",
+  "compressed": "raphael-min.js",
+  "tags": [ "js" ],
+  "version": "1.4.7"
+}

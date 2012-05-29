@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/DmitryBaranovskiy/g.raphael/raw/v{version}/g.raphael.js",
+  "description": "charting for raphael",
+  "compressed": "g.raphael-min.js",
+  "tags": [ "js", "raphael" ],
+  "version": "0.4.1",
+  "dependencies": {
+    "raphael": "1.4.7"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "url": "https://github.com/mbostock/protovis/raw/v{version}/protovis.js",
+  "description": "A visualization toolkit for JavaScript using SVG.",
+  "tags": [ "js", "svg" ],
+  "version": "3.3.1"
+}

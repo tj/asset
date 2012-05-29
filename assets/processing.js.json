@@ -1,0 +1,7 @@
+{
+  "url": "http://cloud.github.com/downloads/processing-js/processing-js/processing-{version}.js",
+  "description": "a port of the Processing visualization language",
+  "filename": "processing.js",
+  "tags": [ "js" ],
+  "version": "1.1.0"
+}

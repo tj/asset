@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/mbostock/d3/raw/v{version}/d3.js",
+  "description": "A JavaScript visualization library for HTML and SVG.",
+  "filename": "d3.js",
+  "tags": [ "js", "svg" ],
+  "version": "1.17.0"
+}

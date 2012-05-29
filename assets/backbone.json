@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/documentcloud/backbone/raw/{version}/backbone.js",
+  "compressed": "backbone-min.js",
+  "description": "Backbone supplies structure to Javascript Apps by providing models, views, collections, and events",
+  "tags": [ "js" ],
+  "version": "0.5.1"
+}
