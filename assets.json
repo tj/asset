@@ -191,7 +191,7 @@
     }
   },
   "processing.js": {
-    "url": "http://processingjs.org/content/download/processing-js-{version}/processing-{version}.js",
+    "url": "http://cloud.github.com/downloads/processing-js/processing-js/processing-{version}.js",
     "description": "a port of the Processing visualization language",
     "filename": "processing.js",
     "tags": ["js"],
@@ -329,7 +329,7 @@
     "version": "3.0"
   },
   "fidel": {
-    "url": "https://raw.github.com/jgallen23/fidel/master/fidel.js",
+    "url": "https://raw.github.com/jgallen23/fidel/master/dist/fidel.js",
     "compressed": "fidel.min.js",
     "description": "Fidel is a simple, lightweight ui controller library",
     "tags": ["js"],
@@ -342,7 +342,7 @@
     "version": "1.0.3"
   },
   "resistance": {
-    "url": "https://raw.github.com/jgallen23/resistance/master/resistance.js",
+    "url": "https://raw.github.com/jgallen23/resistance/master/dist/resistance.js",
     "compressed": "resistance.min.js",
     "description": "A simple async flow control library",
     "tags": ["js", "flow", "async"],

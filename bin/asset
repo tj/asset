@@ -140,7 +140,6 @@ if (assets.length) {
 if (!assets.length) abort('asset <name ...> required');
 
 // install the assets
-
 console.log();
 mkdir(options.out, function(err){
   if (err) abort(err.message);
@@ -157,7 +156,7 @@ process.on('exit', function(){ console.log(); });
 function assetsFromObject(obj) {
   var arr = [];
   for (var asset in obj) {
-    arr.push({ name: asset, version: obj[asset] });
+    arr.push({ name: asset, version: obj[asset].version });
   }
   return arr;
 }
@@ -228,10 +227,10 @@ function info(name){
  */
 
 function search(query) {
-  var size = tty.getWindowSize()
+  var size = Array.isArray(tty.getWindowSize()) ? tty.getWindowSize().reverse() : process.stdout.getWindowSize()
     , padding = 30
-    , height = size.shift()
-    , width = size.shift() - padding;
+    , width = size.shift() - padding
+    , height = size.shift();
 
   asset.search(repo, query, function(name, entry){
     var desc = entry.description;
