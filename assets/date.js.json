@@ -1,0 +1,6 @@
+{
+  "url": "http://datejs.googlecode.com/files/date.js",
+  "description": "Datejs is an open source JavaScript Date library for parsing, formatting and processing.",
+  "tags": [ "js", "date", "time" ],
+  "version": "1.0 Alpha-1"
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/documentcloud/underscore/raw/{version}/underscore.js",
+  "description": "javascript's utility belt",
+  "compressed": "underscore-min.js",
+  "tags": [ "js", "utilities" ],
+  "version": "1.1.7"
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/twitter/bootstrap/raw/v{version}/bootstrap-{version}.css",
+  "compressed": "bootstrap-{version}.min.css",
+  "description": "CSS toolkit from Twitter",
+  "tags": [ "css", "twitter" ],
+  "version": "1.1.1"
+}

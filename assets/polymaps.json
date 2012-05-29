@@ -1,0 +1,6 @@
+{
+  "url": "https://github.com/simplegeo/polymaps/raw/v{version}/polymaps.js",
+  "description": "Polymaps is a free JavaScript library for making dynamic, interactive maps in modern web browsers.",
+  "tags": [ "js", "maps", "mapping" ],
+  "version": "2.5.0"
+}

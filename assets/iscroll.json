@@ -1,0 +1,6 @@
+{
+  "url": "https://github.com/cubiq/iscroll/raw/master/src/iscroll.js",
+  "description": "Hardware accelerated scroll for mobile webkit",
+  "tags": [ "js" ],
+  "version": "4.0"
+}

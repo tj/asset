@@ -1,0 +1,6 @@
+{
+  "url": "https://github.com/visionmedia/move.js/raw/{version}/move.js",
+  "description": "CSS3 JavaScript animation framework",
+  "tags": [ "css", "animation" ],
+  "version": "0.1.1"
+}

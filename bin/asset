@@ -7,7 +7,9 @@
 var asset = require('../')
   , exec = require('child_process').exec
   , tty = require('tty')
-  , fs = require('fs');
+  , fs = require('fs')
+  , basename = require('path').basename
+  , glob = require('glob');
 
 /**
  * Arguments.
@@ -67,7 +69,7 @@ var config = readJSON(process.cwd() + '/.asset')
  */
 
 var repo = readJSON(process.env.HOME + '/.assets')
-  || readJSON(__dirname + '/../assets.json')
+  || readJSON(__dirname + '/../assets')
   || {};
 
 // merge config
@@ -140,6 +142,7 @@ if (assets.length) {
 if (!assets.length) abort('asset <name ...> required');
 
 // install the assets
+
 console.log();
 mkdir(options.out, function(err){
   if (err) abort(err.message);
@@ -326,7 +329,16 @@ function name(asset) {
 
 function readJSON(path) {
   try {
-    return JSON.parse(fs.readFileSync(path, 'utf8'));
+    var stat = fs.statSync(path);
+    if (stat.isDirectory()) {
+      var json = {};
+      glob.sync(path + '/*.json').forEach(function(path) {
+        json[basename(path, '.json')] = JSON.parse(fs.readFileSync(path, 'utf8'));
+      });
+      return json;
+    } else {
+      return JSON.parse(fs.readFileSync(path, 'utf8'));
+    }
   } catch (err) {
     // ignore
   }

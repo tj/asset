@@ -1,0 +1,9 @@
+{
+  "url": "https://github.com/mbostock/d3/raw/v{version}/d3.chart.js",
+  "description": "Chart module for d3. A JavaScript visualization library for HTML and SVG.",
+  "tags": [ "js", "svg" ],
+  "version": "1.11.0",
+  "dependencies": {
+    "d3": "1.17.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://raw.github.com/jgallen23/resistance/master/dist/resistance.js",
+  "compressed": "resistance.min.js",
+  "description": "A simple async flow control library",
+  "tags": [ "js", "flow", "async" ],
+  "version": "1.0.1"
+}

@@ -1,0 +1,6 @@
+{
+  "url": "https://github.com/visionmedia/jade/raw/{version}/jade.js",
+  "description": "jade template engine",
+  "tags": [ "template" ],
+  "version": "0.10.4"
+}

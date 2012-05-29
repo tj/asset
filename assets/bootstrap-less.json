@@ -1,0 +1,16 @@
+{
+  "base": "https://github.com/twitter/bootstrap/raw/v{version}",
+  "description": "CSS toolkit from Twitter (LESS Source)",
+  "tags": [ "css", "twitter", "less" ],
+  "files": [
+    "lib/bootstrap.less",
+    "lib/forms.less",
+    "lib/patterns.less",
+    "lib/preboot.less",
+    "lib/reset.less",
+    "lib/scaffolding.less",
+    "lib/tables.less",
+    "lib/type.less"
+  ],
+  "version": "1.1.1"
+}

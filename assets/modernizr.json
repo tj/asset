@@ -1,0 +1,6 @@
+{
+  "url": "https://github.com/Modernizr/Modernizr/raw/v{version}/modernizr.js",
+  "description": "Feature detection to test browsers against upcoming features",
+  "tags": [ "js", "css", "detection" ],
+  "version": "1.7"
+}

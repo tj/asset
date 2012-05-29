@@ -1,0 +1,6 @@
+{
+  "url": "https://github.com/madrobby/zepto/raw/v{version}/src/zepto.js",
+  "description": "zepto.js is a minimalist inlinable framework for mobile WebKit browsers, with a jQuery-like chaining syntax",
+  "tags": [ "js" ],
+  "version": "0.5"
+}

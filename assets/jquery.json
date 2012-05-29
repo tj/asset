@@ -1,0 +1,8 @@
+{
+  "url": "http://code.jquery.com/jquery-{version}.js",
+  "description": "jquery core framework",
+  "compressed": "jquery-{version}.min.js",
+  "tags": [ "js", "jquery" ],
+  "filename": "jquery.js",
+  "version": "1.6.2"
+}
