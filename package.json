@@ -6,5 +6,4 @@
   , "dependencies": { "request": "1.9.5", "mkdirp": "0.3.x" }
   , "bin": { "asset": "./bin/asset" }
   , "main": "index"
-  , "engines": { "node": "0.4.x" }
 }
