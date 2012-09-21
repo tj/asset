@@ -360,5 +360,12 @@
     "description": "Minimal templating with {{mustaches}} in JavaScript",
     "version": "0.3.0",
     "tags": ["js", "templates", "templating"]
+  },
+  "jade-runtime": {
+    "url": "https://github.com/visionmedia/jade/raw/{version}/runtime.js",
+    "description": "jade template engine for client-side use",
+    "compressed": "runtime.min.js",
+    "tags": ["template"],
+    "version": "0.27.4"
   }
 }
