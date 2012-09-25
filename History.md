@@ -1,3 +1,8 @@
+0.4.12 / 2012-09-25 
+==================
+
+  * fix to match README syntax (compression option)
+	* added jade-runtime
 
 0.4.11 / 2012-06-13 
 ==================
