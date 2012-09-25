@@ -156,7 +156,7 @@ process.on('exit', function(){ console.log(); });
 function assetsFromObject(obj) {
   var arr = [];
   for (var asset in obj) {
-    arr.push({ name: asset, version: obj[asset].version });
+    arr.push({ name: asset, version: obj[asset], compress: options.compress });
   }
   return arr;
 }
