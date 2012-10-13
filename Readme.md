@@ -1,7 +1,7 @@
-
 # Asset
 
-  Asset manager for lazy people (think homebrew for assets).
+  Asset manager for lazy people (think homebrew for assets). Somewhat defunct unless someone wants to maintain it, otherwise
+I recommend [component](http://github.com/component/component), a more robust successor.
 
 ## Installation
 
